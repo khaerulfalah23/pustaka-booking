@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { SignupForm } from '@/components/organisms';
+import { SignUpForm } from '@/components/organisms';
 import { AuthLayout } from '@/components/templates';
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function SignUpPage() {
       desc='Please create an account'
       label='Already have an account'
       link='Sign In'>
-      <SignupForm buttonLabel='Sign Up' />
+      <SignUpForm buttonLabel='Sign Up' />
     </AuthLayout>
   );
 }

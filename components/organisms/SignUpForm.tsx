@@ -15,7 +15,7 @@ import { ReloadIcon } from '@radix-ui/react-icons';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { signUpFormSchema } from '@/lib/form-schema';
 
-export function SignupForm({ buttonLabel }: { buttonLabel: string }) {
+export function SignUpForm({ buttonLabel }: { buttonLabel: string }) {
   const form = useForm<z.infer<typeof signUpFormSchema>>({
     resolver: zodResolver(signUpFormSchema),
     defaultValues: {
