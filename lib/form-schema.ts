@@ -24,3 +24,11 @@ export const signUpFormSchema = z
       path: ['confirmPassword'],
     }
   );
+
+export const signInFormSchema = z.object({
+  email: z
+    .string()
+    .min(1, { message: 'Email is required' })
+    .email({ message: 'Email is not valid' }),
+  password: z.string().min(1, { message: 'Password is required' }),
+});
